@@ -1,20 +1,7 @@
-<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block content %}
 {% load static %}
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sensive Blog - Home</title>
-    <link rel="icon" href="{% static 'img/favicon.png' %}" type="image/png">
-
-    <link rel="stylesheet" href="{% static 'styles.min.css' %}">
-  </head>
-  <body>
-
-  {{post.title}}<br/>
-
-
     <!--================Header Menu Area =================-->
     <header class="header_area">
       <div class="main_menu">
@@ -240,5 +227,5 @@
     <!--================ End Footer Area =================-->
 
     <script src="{% static 'scripts.js' %}"></script>
-  </body>
-</html>
+
+{% endblock %}
