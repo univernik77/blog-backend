@@ -3,6 +3,7 @@
 {% block title %} {{ post.title }} - Blog Details {% endblock %}
 
 {% block content %}
+
   <!--================ Hero sm Banner start =================-->
   <section class="mb-30px">
     <div class="container">
@@ -11,7 +12,7 @@
           <h1>Blog details</h1>
           <nav aria-label="breadcrumb" class="banner-breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">{% url 'index' %}</a></li>
+              <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
               <li class="breadcrumb-item active" aria-current="page">Blog Details</li>
             </ol>
           </nav>
